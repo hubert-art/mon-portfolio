@@ -1,0 +1,327 @@
+*{
+    font-family: montserrat;
+    padding: 0;
+    color: white;
+    margin: 0;
+}
+@font-face{
+    font-family: 'montserrat';
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+nav{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 5rem;
+}
+nav h2{
+    display: inline-block;
+}
+.liens{
+    display: flex;
+    gap: 30px;
+    font-size: 1.1rem;
+    margin-left: 20rem;
+}
+a:first-child{
+    color: rgb(120, 120, 212);
+    border: solid 2px rgb(120, 120, 212);
+    padding: 5px 15px;
+    border-radius: 15px;
+    animation: btn 800ms ease-in;
+}
+a{
+    text-decoration: none;
+    transition: all 150ms ease;
+    z-index: 2;
+    animation: btn 2s ease-in;
+}
+a:hover{
+    color: rgb(120, 120, 212);
+    border: solid 2px rgb(120, 120, 212);
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+section{
+    display: flex;
+    background-color: black;
+    min-height: 100vh;
+}
+.pdiv{
+    width: 50%;
+    background-image: url(PXL_20221123_131212473~3.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+.pdiv h3{
+    color: rgb(120, 120, 212);
+    position: relative;
+    right: 148px;
+    animation: btn 3s ease-in;
+}
+.pdiv p{
+    color: rgb(120, 120, 212);
+    width: 80%;
+    text-align: center;
+    animation: btn 2s ease-in;
+}
+.pdiv strong{
+    color: rgb(120, 120, 212);
+    position: relative;
+    top: 2rem;
+    animation: strong 2s;
+}
+@keyframes strong {
+    0%{
+        position: relative;
+        right: -100%;
+    }
+    
+    100%{
+        position: relative;
+        right: 0;
+    }
+}
+.comps{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 9rem;
+}
+.comp{
+    background-size: cover;
+    height: 2rem;
+    width: 2rem;
+    animation: scale 3s;
+}
+@keyframes scale {
+    0%{
+        transform: scale(0.2);
+    }
+    
+    35%{
+        transform: rotate(20deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg) scale(1.4);
+    }
+}
+#html{
+    background-image: url(html-5.png);
+}
+#css{
+    background-image: url(css-3.png);
+}
+#js{
+    background-image: url(js.png);
+}
+#java{
+    background-image: url(javaa.png);
+}
+.sdiv{
+    width: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    gap: 8px;
+    z-index: 1;
+    overflow: hidden;
+}
+.sdiv h1{
+    margin-top: 10rem;
+    animation: ani 2s ease;
+}
+.sdiv h3{
+    animation: ani 2s ease;
+}
+@keyframes ani {
+    0%{
+        position: relative;
+        left: -100%;
+    }
+    
+    100%{
+        position: relative;
+        left: 0;
+    }
+}
+.sdiv button{
+    background-color: rgb(120, 120, 212);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    border-radius: 5px;
+    animation: btn 3s ease-in;
+    cursor: pointer;
+}
+@keyframes btn {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.icons{
+    display: flex;
+    gap: 15px;
+    margin-top: 6rem;
+}
+#icon{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+.icon1{
+    background-image: url(github.png);
+    animation: icons 1s step-end;
+}
+.icon1 p{
+    background-color: rgb(120, 120, 212);
+    color: white;
+    position: relative;
+    top: 40px;
+    width: 6rem;
+    padding: 5px;
+    left: -60px;
+    font-size: 1rem;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+}
+.icon1:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.icon2{
+    background-image: url(twitter\ \(1\).png);
+    animation: icons 2s step-end;
+}
+.icon2 p{
+    background-color: rgb(120, 120, 212);
+    color: white;
+    position: relative;
+    top: 40px;
+    width: 10rem;
+    padding: 5px;
+    left: -60px;
+    font-size: 1rem;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+}
+.icon2:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.icon3{
+    background-image: url(Pinterest\ Social\ Logo\ free\ vector\ icons\ designed\ by\ Freepik.jpeg);
+    animation: icons 3s step-end;
+}
+.icon3 p{
+    background-color: rgb(120, 120, 212);
+    color: white;
+    position: relative;
+    top: 40px;
+    width: 6rem;
+    padding: 5px;
+    left: -60px;
+    font-size: 1rem;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+}
+.icon3:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.icon4{
+    background-image: url(facebook\ black\ icon.jpeg);
+    animation: icons 4s step-end;
+}
+.icon4 p{
+    background-color: rgb(120, 120, 212);
+    color: white;
+    position: relative;
+    top: 40px;
+    width: 10rem;
+    padding: 5px;
+    left: -60px;
+    font-size: 1rem;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+}
+.icon4:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.icon5{
+    background-image: url(d24ca479-0abd-4688-9672-5fdcef690735.jpeg);
+    animation: icons 5s step-end;
+}
+.icon5 p{
+    background-color: rgb(120, 120, 212);
+    color: white;
+    position: relative;
+    top: 40px;
+    width: 10rem;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+}
+.icon5:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+@keyframes icons {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+small{
+    position: relative;
+    top: 4rem;
+    animation: sml 10s ease-in-out infinite;
+    font-size: 0.8rem;
+}
+@keyframes sml {
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
